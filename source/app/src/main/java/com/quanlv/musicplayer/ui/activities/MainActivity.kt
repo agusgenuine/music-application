@@ -1,39 +1,28 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.activities
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.media.session.PlaybackStateCompat.*
 import android.view.View
+import androidx.core.app.ActivityCompat
 import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.PlaybackState
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.ui.activities.base.BaseActivity
-import com.crrl.beatplayer.ui.fragments.*
-import com.crrl.beatplayer.ui.viewmodels.*
-import com.crrl.beatplayer.utils.BeatConstants
-import com.crrl.beatplayer.utils.BeatConstants.BIND_STATE_BOUND
-import com.crrl.beatplayer.utils.BeatConstants.FAVORITE_ID
-import com.crrl.beatplayer.utils.BeatConstants.NOW_PLAYING
-import com.crrl.beatplayer.utils.BeatConstants.PLAY_LIST_DETAIL
-import com.crrl.beatplayer.utils.GeneralUtils.getStoragePaths
-import com.crrl.beatplayer.utils.SettingsUtility
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.PlaybackState
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.ui.activities.base.BaseActivity
+import com.quanlv.musicplayer.ui.fragments.*
+import com.quanlv.musicplayer.ui.viewmodels.*
+import com.quanlv.musicplayer.utils.BeatConstants
+import com.quanlv.musicplayer.utils.BeatConstants.BIND_STATE_BOUND
+import com.quanlv.musicplayer.utils.BeatConstants.FAVORITE_ID
+import com.quanlv.musicplayer.utils.BeatConstants.NOW_PLAYING
+import com.quanlv.musicplayer.utils.BeatConstants.PLAY_LIST_DETAIL
+import com.quanlv.musicplayer.utils.GeneralUtils.getStoragePaths
+import com.quanlv.musicplayer.utils.SettingsUtility
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_SHORT
 import com.google.gson.Gson
 import org.koin.android.ext.android.inject
@@ -54,7 +43,16 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         init(savedInstanceState)
+
     }
+
+//    private fun requestPermissions(){
+//        val permissions = arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE,
+//            Manifest.permission.READ_EXTERNAL_STORAGE,
+//            Manifest.permission.WAKE_LOCK,
+//            Manifest.permission.INTERNET)
+//        ActivityCompat.requestPermissions(this,permissions,0)
+//    }
 
     override fun onStop() {
         super.onStop()

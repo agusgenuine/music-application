@@ -15,9 +15,9 @@ package com.quanlv.musicplayer.extensions
 
 import android.support.v4.media.MediaBrowserCompat
 import android.support.v4.media.session.MediaSessionCompat
-import com.crrl.beatplayer.models.MediaItem
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.repository.SongsRepository
+import com.quanlv.musicplayer.models.MediaItem
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.repository.SongsRepository
 
 fun <T> List<T>?.moveElement(fromIndex: Int, toIndex: Int): List<T> {
     if (this == null) {

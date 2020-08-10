@@ -13,9 +13,9 @@
 
 package com.quanlv.musicplayer.extensions
 
-import com.crrl.beatplayer.models.MediaId
-import com.crrl.beatplayer.models.QueueInfo
-import com.crrl.beatplayer.models.Song
+import com.quanlv.musicplayer.models.MediaId
+import com.quanlv.musicplayer.models.QueueInfo
+import com.quanlv.musicplayer.models.Song
 import com.google.gson.Gson
 
 fun String.toSong(): Song {

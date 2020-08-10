@@ -18,11 +18,11 @@
 
         <variable
             name="artist"
-            type="com.crrl.beatplayer.models.Artist" />
+            type="com.quanlv.musicplayer.models.Artist" />
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.MainViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

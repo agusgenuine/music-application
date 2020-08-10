@@ -14,7 +14,7 @@
 package com.quanlv.musicplayer.alertdialog.interfaces
 
 import android.view.View
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
 
 interface ItemListener {
     /**

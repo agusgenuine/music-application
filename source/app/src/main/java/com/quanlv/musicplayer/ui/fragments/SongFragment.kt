@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.fragments
 
 import android.os.Bundle
@@ -20,20 +7,20 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.SimpleItemAnimator
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.enums.AlertItemTheme
-import com.crrl.beatplayer.databinding.FragmentSongBinding
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.ui.adapters.SongAdapter
-import com.crrl.beatplayer.ui.fragments.base.BaseFragment
-import com.crrl.beatplayer.ui.viewmodels.PlaylistViewModel
-import com.crrl.beatplayer.ui.viewmodels.SongViewModel
-import com.crrl.beatplayer.utils.AutoClearBinding
-import com.crrl.beatplayer.utils.BeatConstants.PLAY_ALL_SHUFFLED
-import com.crrl.beatplayer.utils.GeneralUtils.getExtraBundle
-import com.crrl.beatplayer.utils.SortModes
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.enums.AlertItemTheme
+import com.quanlv.musicplayer.databinding.FragmentSongBinding
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.ui.adapters.SongAdapter
+import com.quanlv.musicplayer.ui.fragments.base.BaseFragment
+import com.quanlv.musicplayer.ui.viewmodels.PlaylistViewModel
+import com.quanlv.musicplayer.ui.viewmodels.SongViewModel
+import com.quanlv.musicplayer.utils.AutoClearBinding
+import com.quanlv.musicplayer.utils.BeatConstants.PLAY_ALL_SHUFFLED
+import com.quanlv.musicplayer.utils.GeneralUtils.getExtraBundle
+import com.quanlv.musicplayer.utils.SortModes
 import kotlinx.android.synthetic.main.layout_recyclerview.*
 import org.koin.android.ext.android.inject
 

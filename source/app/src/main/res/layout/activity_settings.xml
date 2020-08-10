@@ -103,7 +103,7 @@
                                 android:layout_height="@dimen/btn_size"
                                 android:scaleType="centerInside"
                                 android:src="@drawable/ic_theme"
-                                android:tint="?btnTintColor" />
+                                app:tint="?btnTintColor" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"

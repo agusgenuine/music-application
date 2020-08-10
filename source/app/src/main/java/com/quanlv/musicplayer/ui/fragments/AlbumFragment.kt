@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.fragments
 
 import android.os.Bundle
@@ -21,20 +8,20 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.GridLayoutManager
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.enums.AlertItemTheme
-import com.crrl.beatplayer.databinding.FragmentAlbumBinding
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.Album
-import com.crrl.beatplayer.ui.adapters.AlbumAdapter
-import com.crrl.beatplayer.ui.fragments.base.BaseFragment
-import com.crrl.beatplayer.ui.viewmodels.AlbumViewModel
-import com.crrl.beatplayer.utils.BeatConstants
-import com.crrl.beatplayer.utils.BeatConstants.ALBUM_KEY
-import com.crrl.beatplayer.utils.GeneralUtils
-import com.crrl.beatplayer.utils.GeneralUtils.PORTRAIT
-import com.crrl.beatplayer.utils.SortModes
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.enums.AlertItemTheme
+import com.quanlv.musicplayer.databinding.FragmentAlbumBinding
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.Album
+import com.quanlv.musicplayer.ui.adapters.AlbumAdapter
+import com.quanlv.musicplayer.ui.fragments.base.BaseFragment
+import com.quanlv.musicplayer.ui.viewmodels.AlbumViewModel
+import com.quanlv.musicplayer.utils.BeatConstants
+import com.quanlv.musicplayer.utils.BeatConstants.ALBUM_KEY
+import com.quanlv.musicplayer.utils.GeneralUtils
+import com.quanlv.musicplayer.utils.GeneralUtils.PORTRAIT
+import com.quanlv.musicplayer.utils.SortModes
 import org.koin.android.ext.android.inject
 
 class AlbumFragment : BaseFragment<Album>() {

@@ -20,7 +20,7 @@
 
         <variable
             name="album"
-            type="com.crrl.beatplayer.models.Album" />
+            type="com.quanlv.musicplayer.models.Album" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

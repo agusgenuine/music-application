@@ -14,16 +14,16 @@
 package com.quanlv.musicplayer.models
 
 import android.database.Cursor
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_ARTIST
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_ARTIST_ID
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_ID
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_SONG_COUNT
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_TITLE
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_TYPE
-import com.crrl.beatplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_YEAR
-import com.crrl.beatplayer.utils.BeatConstants.ARTIST_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.FAVORITE_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.FOLDER_TYPE
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_ARTIST
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_ARTIST_ID
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_ID
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_SONG_COUNT
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_TITLE
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_TYPE
+import com.quanlv.musicplayer.repository.FavoritesRepositoryImplementation.Companion.COLUMN_YEAR
+import com.quanlv.musicplayer.utils.BeatConstants.ARTIST_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.FAVORITE_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.FOLDER_TYPE
 
 class Favorite(
     var id: Long = -1,

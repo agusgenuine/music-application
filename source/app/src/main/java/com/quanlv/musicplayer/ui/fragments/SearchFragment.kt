@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.fragments
 
 
@@ -23,26 +10,26 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.SimpleItemAnimator
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.databinding.FragmentSearchBinding
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.Album
-import com.crrl.beatplayer.models.Artist
-import com.crrl.beatplayer.models.MediaItem
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.ui.adapters.SearchAdapter
-import com.crrl.beatplayer.ui.fragments.base.BaseFragment
-import com.crrl.beatplayer.ui.viewmodels.PlaylistViewModel
-import com.crrl.beatplayer.ui.viewmodels.SearchViewModel
-import com.crrl.beatplayer.utils.BeatConstants.ALBUM_DETAIL
-import com.crrl.beatplayer.utils.BeatConstants.ALBUM_KEY
-import com.crrl.beatplayer.utils.BeatConstants.ARTIST_DETAIL
-import com.crrl.beatplayer.utils.BeatConstants.ARTIST_KEY
-import com.crrl.beatplayer.utils.BeatConstants.PLAY_LIST_TYPE
-import com.crrl.beatplayer.utils.GeneralUtils.PORTRAIT
-import com.crrl.beatplayer.utils.GeneralUtils.getExtraBundle
-import com.crrl.beatplayer.utils.GeneralUtils.getOrientation
-import com.crrl.beatplayer.utils.GeneralUtils.toggleShowKeyBoard
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.databinding.FragmentSearchBinding
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.Album
+import com.quanlv.musicplayer.models.Artist
+import com.quanlv.musicplayer.models.MediaItem
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.ui.adapters.SearchAdapter
+import com.quanlv.musicplayer.ui.fragments.base.BaseFragment
+import com.quanlv.musicplayer.ui.viewmodels.PlaylistViewModel
+import com.quanlv.musicplayer.ui.viewmodels.SearchViewModel
+import com.quanlv.musicplayer.utils.BeatConstants.ALBUM_DETAIL
+import com.quanlv.musicplayer.utils.BeatConstants.ALBUM_KEY
+import com.quanlv.musicplayer.utils.BeatConstants.ARTIST_DETAIL
+import com.quanlv.musicplayer.utils.BeatConstants.ARTIST_KEY
+import com.quanlv.musicplayer.utils.BeatConstants.PLAY_LIST_TYPE
+import com.quanlv.musicplayer.utils.GeneralUtils.PORTRAIT
+import com.quanlv.musicplayer.utils.GeneralUtils.getExtraBundle
+import com.quanlv.musicplayer.utils.GeneralUtils.getOrientation
+import com.quanlv.musicplayer.utils.GeneralUtils.toggleShowKeyBoard
 import org.koin.android.ext.android.inject
 
 class SearchFragment : BaseFragment<MediaItem>(), TextWatcher {

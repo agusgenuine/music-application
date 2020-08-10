@@ -14,15 +14,15 @@
 package com.quanlv.musicplayer.alertdialog
 
 import androidx.appcompat.app.AppCompatActivity
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.stylers.AlertItemStyle
-import com.crrl.beatplayer.alertdialog.enums.AlertType
-import com.crrl.beatplayer.alertdialog.enums.AlertType.*
-import com.crrl.beatplayer.alertdialog.stylers.base.ItemStyle
-import com.crrl.beatplayer.alertdialog.views.BottomSheetDialogAlert
-import com.crrl.beatplayer.alertdialog.views.DialogAlert
-import com.crrl.beatplayer.alertdialog.views.InputDialog
-import com.crrl.beatplayer.alertdialog.views.base.DialogFragmentBase
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.stylers.AlertItemStyle
+import com.quanlv.musicplayer.alertdialog.enums.AlertType
+import com.quanlv.musicplayer.alertdialog.enums.AlertType.*
+import com.quanlv.musicplayer.alertdialog.stylers.base.ItemStyle
+import com.quanlv.musicplayer.alertdialog.views.BottomSheetDialogAlert
+import com.quanlv.musicplayer.alertdialog.views.DialogAlert
+import com.quanlv.musicplayer.alertdialog.views.InputDialog
+import com.quanlv.musicplayer.alertdialog.views.base.DialogFragmentBase
 
 class AlertDialog(
     private val title: String,

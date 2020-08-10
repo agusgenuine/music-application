@@ -18,7 +18,7 @@
 
         <variable
             name="playlist"
-            type="com.crrl.beatplayer.models.Playlist" />
+            type="com.quanlv.musicplayer.models.Playlist" />
     </data>
 
     <LinearLayout

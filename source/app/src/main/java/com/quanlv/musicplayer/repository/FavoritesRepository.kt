@@ -16,13 +16,13 @@ package com.quanlv.musicplayer.repository
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
-import com.crrl.beatplayer.db.DBHelper
-import com.crrl.beatplayer.extensions.optimizeReadOnlyList
-import com.crrl.beatplayer.extensions.toList
-import com.crrl.beatplayer.models.Favorite
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.utils.BeatConstants.FAVORITE_ID
-import com.crrl.beatplayer.utils.BeatConstants.FAVORITE_TYPE
+import com.quanlv.musicplayer.db.DBHelper
+import com.quanlv.musicplayer.extensions.optimizeReadOnlyList
+import com.quanlv.musicplayer.extensions.toList
+import com.quanlv.musicplayer.models.Favorite
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.utils.BeatConstants.FAVORITE_ID
+import com.quanlv.musicplayer.utils.BeatConstants.FAVORITE_TYPE
 
 interface FavoritesRepository {
     fun createFavorite(favorite: Favorite): Int

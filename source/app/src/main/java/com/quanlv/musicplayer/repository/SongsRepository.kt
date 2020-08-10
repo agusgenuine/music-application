@@ -21,10 +21,10 @@ import android.database.Cursor
 import android.os.RemoteException
 import android.provider.MediaStore.AUTHORITY
 import android.provider.MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
-import com.crrl.beatplayer.extensions.toList
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.utils.GeneralUtils.getSongUri
-import com.crrl.beatplayer.utils.SettingsUtility
+import com.quanlv.musicplayer.extensions.toList
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.utils.GeneralUtils.getSongUri
+import com.quanlv.musicplayer.utils.SettingsUtility
 import timber.log.Timber
 
 

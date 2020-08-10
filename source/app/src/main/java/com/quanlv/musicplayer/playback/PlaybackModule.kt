@@ -13,10 +13,10 @@
 
 package com.quanlv.musicplayer.playback
 
-import com.crrl.beatplayer.playback.players.BeatMediaPlayer
-import com.crrl.beatplayer.playback.players.BeatMediaPlayerImplementation
-import com.crrl.beatplayer.playback.players.BeatPlayer
-import com.crrl.beatplayer.playback.players.BeatPlayerImplementation
+import com.quanlv.musicplayer.playback.players.BeatMediaPlayer
+import com.quanlv.musicplayer.playback.players.BeatMediaPlayerImplementation
+import com.quanlv.musicplayer.playback.players.BeatPlayer
+import com.quanlv.musicplayer.playback.players.BeatPlayerImplementation
 import org.koin.dsl.bind
 import org.koin.dsl.module
 

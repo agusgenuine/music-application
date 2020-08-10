@@ -17,7 +17,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.Observer
-import com.crrl.beatplayer.alias.LiveDataFilter
+import com.quanlv.musicplayer.alias.LiveDataFilter
 
 fun <T> LiveData<T>.observe(owner: LifecycleOwner, onEmission: (T) -> Unit) {
     return observe(owner, Observer {

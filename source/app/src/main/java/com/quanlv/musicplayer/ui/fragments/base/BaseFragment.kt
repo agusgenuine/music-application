@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.fragments.base
 
 import android.content.Intent
@@ -24,30 +11,30 @@ import android.widget.Toast.LENGTH_SHORT
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alertdialog.AlertDialog
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.enums.AlertItemTheme
-import com.crrl.beatplayer.alertdialog.enums.AlertType
-import com.crrl.beatplayer.alertdialog.stylers.AlertItemStyle
-import com.crrl.beatplayer.alertdialog.stylers.InputStyle
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.interfaces.ItemClickListener
-import com.crrl.beatplayer.models.MediaItem
-import com.crrl.beatplayer.models.Playlist
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.ui.activities.SelectSongActivity
-import com.crrl.beatplayer.ui.fragments.FavoriteDetailFragment
-import com.crrl.beatplayer.ui.fragments.PlaylistDetailFragment
-import com.crrl.beatplayer.ui.viewmodels.*
-import com.crrl.beatplayer.utils.BeatConstants.FAVORITE_ID
-import com.crrl.beatplayer.utils.BeatConstants.PLAY_LIST_DETAIL
-import com.crrl.beatplayer.utils.BeatConstants.REMOVE_SONG
-import com.crrl.beatplayer.utils.BeatConstants.SONG_KEY
-import com.crrl.beatplayer.utils.BeatConstants.SONG_TYPE
-import com.crrl.beatplayer.utils.GeneralUtils.addZeros
-import com.crrl.beatplayer.utils.GeneralUtils.getExtraBundle
-import com.crrl.beatplayer.utils.SettingsUtility
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alertdialog.AlertDialog
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.enums.AlertItemTheme
+import com.quanlv.musicplayer.alertdialog.enums.AlertType
+import com.quanlv.musicplayer.alertdialog.stylers.AlertItemStyle
+import com.quanlv.musicplayer.alertdialog.stylers.InputStyle
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.interfaces.ItemClickListener
+import com.quanlv.musicplayer.models.MediaItem
+import com.quanlv.musicplayer.models.Playlist
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.ui.activities.SelectSongActivity
+import com.quanlv.musicplayer.ui.fragments.FavoriteDetailFragment
+import com.quanlv.musicplayer.ui.fragments.PlaylistDetailFragment
+import com.quanlv.musicplayer.ui.viewmodels.*
+import com.quanlv.musicplayer.utils.BeatConstants.FAVORITE_ID
+import com.quanlv.musicplayer.utils.BeatConstants.PLAY_LIST_DETAIL
+import com.quanlv.musicplayer.utils.BeatConstants.REMOVE_SONG
+import com.quanlv.musicplayer.utils.BeatConstants.SONG_KEY
+import com.quanlv.musicplayer.utils.BeatConstants.SONG_TYPE
+import com.quanlv.musicplayer.utils.GeneralUtils.addZeros
+import com.quanlv.musicplayer.utils.GeneralUtils.getExtraBundle
+import com.quanlv.musicplayer.utils.SettingsUtility
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.skydoves.powermenu.MenuAnimation
 import com.skydoves.powermenu.OnMenuItemClickListener

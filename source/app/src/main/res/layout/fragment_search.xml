@@ -20,7 +20,7 @@
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.SearchViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.SearchViewModel" />
 
         <variable
             name="status"

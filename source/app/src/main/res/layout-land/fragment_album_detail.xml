@@ -15,21 +15,21 @@
 
     <data>
 
-        <import type="com.crrl.beatplayer.utils.GeneralUtils" />
+        <import type="com.quanlv.musicplayer.utils.GeneralUtils" />
 
         <import type="android.view.View" />
 
         <variable
             name="album"
-            type="com.crrl.beatplayer.models.Album" />
+            type="com.quanlv.musicplayer.models.Album" />
 
         <variable
             name="mainViewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.MainViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.MainViewModel" />
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.AlbumViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.AlbumViewModel" />
 
         <variable
             name="totalDuration"

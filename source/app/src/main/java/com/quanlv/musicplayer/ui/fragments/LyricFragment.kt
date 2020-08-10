@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.fragments
 
 
@@ -20,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.enums.AlertItemTheme
-import com.crrl.beatplayer.databinding.FragmentLyricBinding
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.MediaItemData
-import com.crrl.beatplayer.repository.SongsRepository
-import com.crrl.beatplayer.ui.fragments.base.BaseSongDetailFragment
-import com.crrl.beatplayer.utils.AutoClearBinding
-import com.crrl.beatplayer.utils.LyricsHelper
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.enums.AlertItemTheme
+import com.quanlv.musicplayer.databinding.FragmentLyricBinding
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.MediaItemData
+import com.quanlv.musicplayer.repository.SongsRepository
+import com.quanlv.musicplayer.ui.fragments.base.BaseSongDetailFragment
+import com.quanlv.musicplayer.utils.AutoClearBinding
+import com.quanlv.musicplayer.utils.LyricsHelper
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

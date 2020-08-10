@@ -26,16 +26,16 @@ import androidx.core.app.NotificationCompat
 import androidx.core.graphics.toColorInt
 import androidx.media.session.MediaButtonReceiver.buildMediaButtonPendingIntent
 import androidx.palette.graphics.Palette
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.extensions.isPlaying
-import com.crrl.beatplayer.playback.services.BeatPlayerService
-import com.crrl.beatplayer.ui.activities.MainActivity
-import com.crrl.beatplayer.utils.BeatConstants.CHANNEL_ID
-import com.crrl.beatplayer.utils.BeatConstants.NEXT
-import com.crrl.beatplayer.utils.BeatConstants.NOTIFICATION_ID
-import com.crrl.beatplayer.utils.BeatConstants.PLAY_PAUSE
-import com.crrl.beatplayer.utils.BeatConstants.PREVIOUS
-import com.crrl.beatplayer.utils.GeneralUtils.isOreo
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.extensions.isPlaying
+import com.quanlv.musicplayer.playback.services.BeatPlayerService
+import com.quanlv.musicplayer.ui.activities.MainActivity
+import com.quanlv.musicplayer.utils.BeatConstants.CHANNEL_ID
+import com.quanlv.musicplayer.utils.BeatConstants.NEXT
+import com.quanlv.musicplayer.utils.BeatConstants.NOTIFICATION_ID
+import com.quanlv.musicplayer.utils.BeatConstants.PLAY_PAUSE
+import com.quanlv.musicplayer.utils.BeatConstants.PREVIOUS
+import com.quanlv.musicplayer.utils.GeneralUtils.isOreo
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import androidx.media.app.NotificationCompat as NotificationMediaCompat

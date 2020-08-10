@@ -1,31 +1,18 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.adapters
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.databinding.SongItemNoCoverBinding
-import com.crrl.beatplayer.databinding.SongItemBinding
-import com.crrl.beatplayer.databinding.SongItemHeaderBinding
-import com.crrl.beatplayer.extensions.hide
-import com.crrl.beatplayer.extensions.inflateWithBinding
-import com.crrl.beatplayer.extensions.setAll
-import com.crrl.beatplayer.interfaces.ItemClickListener
-import com.crrl.beatplayer.models.Song
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.databinding.SongItemNoCoverBinding
+import com.quanlv.musicplayer.databinding.SongItemBinding
+import com.quanlv.musicplayer.databinding.SongItemHeaderBinding
+import com.quanlv.musicplayer.extensions.hide
+import com.quanlv.musicplayer.extensions.inflateWithBinding
+import com.quanlv.musicplayer.extensions.setAll
+import com.quanlv.musicplayer.interfaces.ItemClickListener
+import com.quanlv.musicplayer.models.Song
 
 private const val HEADER_TYPE = 0
 private const val ITEM_TYPE = 1

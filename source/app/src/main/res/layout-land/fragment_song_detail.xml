@@ -17,11 +17,11 @@
 
     <data>
 
-        <import type="com.crrl.beatplayer.utils.GeneralUtils" />
+        <import type="com.quanlv.musicplayer.utils.GeneralUtils" />
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.SongDetailViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.SongDetailViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

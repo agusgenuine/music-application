@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.utils
 
 import android.content.ContentUris.withAppendedId
@@ -31,16 +18,16 @@ import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT
 import android.widget.EditText
 import androidx.core.content.ContextCompat
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.extensions.optimize
-import com.crrl.beatplayer.extensions.systemService
-import com.crrl.beatplayer.extensions.toFileDescriptor
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.utils.BeatConstants.ARTWORK_URI
-import com.crrl.beatplayer.utils.BeatConstants.SEEK_TO_POS
-import com.crrl.beatplayer.utils.BeatConstants.SONG_LIST_NAME
-import com.crrl.beatplayer.utils.BeatConstants.SONG_URI
-import com.crrl.beatplayer.utils.SettingsUtility.Companion.QUEUE_INFO_KEY
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.extensions.optimize
+import com.quanlv.musicplayer.extensions.systemService
+import com.quanlv.musicplayer.extensions.toFileDescriptor
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.utils.BeatConstants.ARTWORK_URI
+import com.quanlv.musicplayer.utils.BeatConstants.SEEK_TO_POS
+import com.quanlv.musicplayer.utils.BeatConstants.SONG_LIST_NAME
+import com.quanlv.musicplayer.utils.BeatConstants.SONG_URI
+import com.quanlv.musicplayer.utils.SettingsUtility.Companion.QUEUE_INFO_KEY
 import timber.log.Timber
 import java.io.File
 import java.io.FileInputStream

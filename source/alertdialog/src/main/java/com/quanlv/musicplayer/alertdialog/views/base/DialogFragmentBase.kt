@@ -17,9 +17,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.crrl.beatplayer.alertdialog.R
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.interfaces.ItemListener
+import com.quanlv.musicplayer.alertdialog.R
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.interfaces.ItemListener
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 open class DialogFragmentBase : BottomSheetDialogFragment(), ItemListener {

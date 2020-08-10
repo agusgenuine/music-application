@@ -1,32 +1,19 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.fragments
 
 
 import android.os.Bundle
 import android.support.v4.media.session.PlaybackStateCompat
 import android.view.*
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.databinding.FragmentSongDetailBinding
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.MediaItemData
-import com.crrl.beatplayer.ui.fragments.base.BaseSongDetailFragment
-import com.crrl.beatplayer.ui.viewmodels.SongViewModel
-import com.crrl.beatplayer.utils.AutoClearBinding
-import com.crrl.beatplayer.utils.BeatConstants.BIND_STATE_BOUND
-import com.crrl.beatplayer.utils.GeneralUtils
-import com.crrl.beatplayer.utils.GeneralUtils.getSongUri
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.databinding.FragmentSongDetailBinding
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.MediaItemData
+import com.quanlv.musicplayer.ui.fragments.base.BaseSongDetailFragment
+import com.quanlv.musicplayer.ui.viewmodels.SongViewModel
+import com.quanlv.musicplayer.utils.AutoClearBinding
+import com.quanlv.musicplayer.utils.BeatConstants.BIND_STATE_BOUND
+import com.quanlv.musicplayer.utils.GeneralUtils
+import com.quanlv.musicplayer.utils.GeneralUtils.getSongUri
 import kotlinx.android.synthetic.main.fragment_song_detail.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.withContext

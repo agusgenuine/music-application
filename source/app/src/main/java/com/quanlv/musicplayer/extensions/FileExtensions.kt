@@ -14,7 +14,7 @@
 package com.quanlv.musicplayer.extensions
 
 import android.content.Context
-import com.crrl.beatplayer.utils.GeneralUtils.getStoragePaths
+import com.quanlv.musicplayer.utils.GeneralUtils.getStoragePaths
 import timber.log.Timber
 import java.io.File
 

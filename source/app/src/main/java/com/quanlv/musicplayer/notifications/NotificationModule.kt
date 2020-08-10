@@ -16,7 +16,7 @@ package com.quanlv.musicplayer.notifications
 import android.app.Application
 import android.app.NotificationManager
 import android.content.Context
-import com.crrl.beatplayer.extensions.systemService
+import com.quanlv.musicplayer.extensions.systemService
 import org.koin.dsl.bind
 import org.koin.dsl.module
 

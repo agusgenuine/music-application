@@ -18,9 +18,9 @@ import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.PowerManager
-import com.crrl.beatplayer.alias.OnCompletion
-import com.crrl.beatplayer.alias.OnError
-import com.crrl.beatplayer.alias.OnPrepared
+import com.quanlv.musicplayer.alias.OnCompletion
+import com.quanlv.musicplayer.alias.OnError
+import com.quanlv.musicplayer.alias.OnPrepared
 import timber.log.Timber
 
 interface BeatMediaPlayer {

@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.activities.base
 
 import android.content.Intent
@@ -19,15 +6,15 @@ import android.media.audiofx.AudioEffect
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.extensions.DEFAULT
-import com.crrl.beatplayer.extensions.addFragment
-import com.crrl.beatplayer.extensions.getColorByTheme
-import com.crrl.beatplayer.extensions.snackbar
-import com.crrl.beatplayer.ui.activities.SettingsActivity
-import com.crrl.beatplayer.ui.fragments.SearchFragment
-import com.crrl.beatplayer.utils.BeatConstants
-import com.crrl.beatplayer.utils.SettingsUtility
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.extensions.DEFAULT
+import com.quanlv.musicplayer.extensions.addFragment
+import com.quanlv.musicplayer.extensions.getColorByTheme
+import com.quanlv.musicplayer.extensions.snackbar
+import com.quanlv.musicplayer.ui.activities.SettingsActivity
+import com.quanlv.musicplayer.ui.fragments.SearchFragment
+import com.quanlv.musicplayer.utils.BeatConstants
+import com.quanlv.musicplayer.utils.SettingsUtility
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_SHORT
 import com.skydoves.powermenu.MenuAnimation
 import com.skydoves.powermenu.OnMenuItemClickListener

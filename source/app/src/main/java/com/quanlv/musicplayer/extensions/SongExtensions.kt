@@ -14,9 +14,9 @@
 package com.quanlv.musicplayer.extensions
 
 import android.support.v4.media.MediaDescriptionCompat
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.utils.GeneralUtils
-import com.crrl.beatplayer.utils.GeneralUtils.getAlbumArtUri
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.utils.GeneralUtils
+import com.quanlv.musicplayer.utils.GeneralUtils.getAlbumArtUri
 
 fun Int.format(): String {
     return GeneralUtils.formatMilliseconds(this.toLong())

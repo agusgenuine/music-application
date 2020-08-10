@@ -14,7 +14,7 @@
 package com.quanlv.musicplayer.alertdialog.stylers
 
 import android.graphics.Color
-import com.crrl.beatplayer.alertdialog.stylers.base.ItemStyle
+import com.quanlv.musicplayer.alertdialog.stylers.base.ItemStyle
 
 class InputStyle(
     var backgroundColor: Int = Color.parseColor("#131313"),

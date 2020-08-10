@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-package com.crrl.beatplayer.interfaces
+package com.quanlv.musicplayer.interfaces
 
 import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
 

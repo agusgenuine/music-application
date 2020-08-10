@@ -15,7 +15,7 @@ package com.quanlv.musicplayer.models
 
 import android.support.v4.media.MediaMetadataCompat.METADATA_KEY_MEDIA_ID
 import android.support.v4.media.session.MediaControllerCompat
-import com.crrl.beatplayer.extensions.toIdList
+import com.quanlv.musicplayer.extensions.toIdList
 
 data class Queue(
     var queueTitle: String = "",

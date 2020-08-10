@@ -32,19 +32,19 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alertdialog.MusicVisualizer
-import com.crrl.beatplayer.ui.widgets.SimpleCustomSnackbar
-import com.crrl.beatplayer.utils.GeneralUtils
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alertdialog.MusicVisualizer
+import com.quanlv.musicplayer.ui.widgets.SimpleCustomSnackbar
+import com.quanlv.musicplayer.utils.GeneralUtils
 import com.github.florent37.kotlin.pleaseanimate.please
 import com.google.android.material.tabs.TabLayout
 import rm.com.audiowave.AudioWaveView
 
 
-const val DEFAULT = "com.crrl.beatplayer.DEFAULT"
-const val SUCCESS = "com.crrl.beatplayer.SUCCESS"
-const val ERROR = "com.crrl.beatplayer.ERROR"
-const val CUSTOM = "com.crrl.beatplayer.CUSTOM"
+const val DEFAULT = "com.quanlv.musicplayer.DEFAULT"
+const val SUCCESS = "com.quanlv.musicplayer.SUCCESS"
+const val ERROR = "com.quanlv.musicplayer.ERROR"
+const val CUSTOM = "com.quanlv.musicplayer.CUSTOM"
 
 fun <T : ViewDataBinding> ViewGroup.inflateWithBinding(
     @LayoutRes layoutRes: Int,

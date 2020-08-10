@@ -20,13 +20,13 @@
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.FavoriteViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.FavoriteViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.crrl.beatplayer.ui.fragments.FavoriteFragment">
+        tools:context="com.quanlv.musicplayer.ui.fragments.FavoriteFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"

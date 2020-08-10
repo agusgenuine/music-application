@@ -20,7 +20,7 @@
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.PlaylistViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.PlaylistViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

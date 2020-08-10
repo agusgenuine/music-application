@@ -19,7 +19,7 @@
 
         <variable
             name="artist"
-            type="com.crrl.beatplayer.models.Artist" />
+            type="com.quanlv.musicplayer.models.Artist" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

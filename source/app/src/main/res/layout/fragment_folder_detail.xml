@@ -19,11 +19,11 @@
 
         <variable
             name="folder"
-            type="com.crrl.beatplayer.models.Folder" />
+            type="com.quanlv.musicplayer.models.Folder" />
 
         <variable
             name="mainViewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.MainViewModel"/>
+            type="com.quanlv.musicplayer.ui.viewmodels.MainViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

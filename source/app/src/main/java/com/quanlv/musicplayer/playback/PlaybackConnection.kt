@@ -21,7 +21,7 @@ import android.support.v4.media.session.MediaControllerCompat
 import android.support.v4.media.session.MediaSessionCompat
 import android.support.v4.media.session.PlaybackStateCompat
 import androidx.lifecycle.MutableLiveData
-import com.crrl.beatplayer.models.Queue
+import com.quanlv.musicplayer.models.Queue
 
 val NONE_PLAYBACK_STATE: PlaybackStateCompat = PlaybackStateCompat.Builder()
     .setState(PlaybackStateCompat.STATE_NONE, 0, 0f)

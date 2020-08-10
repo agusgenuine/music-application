@@ -15,7 +15,7 @@ package com.quanlv.musicplayer.alertdialog.actions
 
 import android.view.View
 import androidx.annotation.DrawableRes
-import com.crrl.beatplayer.alertdialog.enums.AlertItemTheme
+import com.quanlv.musicplayer.alertdialog.enums.AlertItemTheme
 
 data class AlertItemAction(
     val title: String = "",

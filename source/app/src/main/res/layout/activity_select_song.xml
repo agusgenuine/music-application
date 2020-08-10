@@ -17,7 +17,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.SongViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.SongViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

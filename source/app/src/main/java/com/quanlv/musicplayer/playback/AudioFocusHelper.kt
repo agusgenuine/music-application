@@ -19,12 +19,12 @@ import android.media.AudioAttributes
 import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.media.AudioManager.*
-import com.crrl.beatplayer.alias.OnAudioFocusGain
-import com.crrl.beatplayer.alias.OnAudioFocusLoss
-import com.crrl.beatplayer.alias.OnAudioFocusLossTransient
-import com.crrl.beatplayer.alias.OnAudioFocusLossTransientCanDuck
-import com.crrl.beatplayer.extensions.systemService
-import com.crrl.beatplayer.utils.GeneralUtils.isOreo
+import com.quanlv.musicplayer.alias.OnAudioFocusGain
+import com.quanlv.musicplayer.alias.OnAudioFocusLoss
+import com.quanlv.musicplayer.alias.OnAudioFocusLossTransient
+import com.quanlv.musicplayer.alias.OnAudioFocusLossTransientCanDuck
+import com.quanlv.musicplayer.extensions.systemService
+import com.quanlv.musicplayer.utils.GeneralUtils.isOreo
 
 interface AudioFocusHelper {
     var isAudioFocusGranted: Boolean

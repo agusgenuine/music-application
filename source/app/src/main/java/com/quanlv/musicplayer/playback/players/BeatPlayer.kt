@@ -24,21 +24,21 @@ import android.support.v4.media.session.PlaybackStateCompat
 import android.support.v4.media.session.PlaybackStateCompat.*
 import androidx.core.net.toUri
 import androidx.core.os.bundleOf
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alias.*
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.playback.AudioFocusHelper
-import com.crrl.beatplayer.repository.SongsRepository
-import com.crrl.beatplayer.utils.BeatConstants.BY_UI_KEY
-import com.crrl.beatplayer.utils.BeatConstants.REPEAT_ALL
-import com.crrl.beatplayer.utils.BeatConstants.REPEAT_MODE
-import com.crrl.beatplayer.utils.BeatConstants.REPEAT_ONE
-import com.crrl.beatplayer.utils.BeatConstants.SHUFFLE_MODE
-import com.crrl.beatplayer.utils.GeneralUtils.getAlbumArtBitmap
-import com.crrl.beatplayer.utils.GeneralUtils.getSongUri
-import com.crrl.beatplayer.utils.QueueUtils
-import com.crrl.beatplayer.utils.SettingsUtility
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alias.*
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.playback.AudioFocusHelper
+import com.quanlv.musicplayer.repository.SongsRepository
+import com.quanlv.musicplayer.utils.BeatConstants.BY_UI_KEY
+import com.quanlv.musicplayer.utils.BeatConstants.REPEAT_ALL
+import com.quanlv.musicplayer.utils.BeatConstants.REPEAT_MODE
+import com.quanlv.musicplayer.utils.BeatConstants.REPEAT_ONE
+import com.quanlv.musicplayer.utils.BeatConstants.SHUFFLE_MODE
+import com.quanlv.musicplayer.utils.GeneralUtils.getAlbumArtBitmap
+import com.quanlv.musicplayer.utils.GeneralUtils.getSongUri
+import com.quanlv.musicplayer.utils.QueueUtils
+import com.quanlv.musicplayer.utils.SettingsUtility
 
 
 interface BeatPlayer {

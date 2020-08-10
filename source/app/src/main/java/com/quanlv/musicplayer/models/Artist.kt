@@ -14,7 +14,7 @@
 package com.quanlv.musicplayer.models
 
 import android.database.Cursor
-import com.crrl.beatplayer.utils.BeatConstants.ARTIST_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.ARTIST_TYPE
 import com.google.gson.Gson
 
 data class Artist(

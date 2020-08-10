@@ -14,11 +14,11 @@
 package com.quanlv.musicplayer.models
 
 import android.database.Cursor
-import com.crrl.beatplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_ALBUM_ID
-import com.crrl.beatplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_COVER_ID
-import com.crrl.beatplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_ID
-import com.crrl.beatplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_NAME
-import com.crrl.beatplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_SONG_COUNT
+import com.quanlv.musicplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_ALBUM_ID
+import com.quanlv.musicplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_COVER_ID
+import com.quanlv.musicplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_ID
+import com.quanlv.musicplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_NAME
+import com.quanlv.musicplayer.repository.PlaylistRepositoryImplementation.Companion.COLUMN_SONG_COUNT
 import com.google.gson.Gson
 
 data class Playlist(

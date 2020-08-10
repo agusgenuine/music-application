@@ -19,7 +19,7 @@
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.AlbumViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.AlbumViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

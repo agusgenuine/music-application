@@ -1,16 +1,3 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.adapters
 
 import android.app.Activity
@@ -19,17 +6,17 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SimpleItemAnimator
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.databinding.SearchItemBinding
-import com.crrl.beatplayer.extensions.deepEquals
-import com.crrl.beatplayer.extensions.inflateWithBinding
-import com.crrl.beatplayer.interfaces.ItemClickListener
-import com.crrl.beatplayer.models.*
-import com.crrl.beatplayer.ui.viewmodels.SearchViewModel
-import com.crrl.beatplayer.ui.viewmodels.SongDetailViewModel
-import com.crrl.beatplayer.utils.BeatConstants.ALBUM_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.ARTIST_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.SONG_TYPE
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.databinding.SearchItemBinding
+import com.quanlv.musicplayer.extensions.deepEquals
+import com.quanlv.musicplayer.extensions.inflateWithBinding
+import com.quanlv.musicplayer.interfaces.ItemClickListener
+import com.quanlv.musicplayer.models.*
+import com.quanlv.musicplayer.ui.viewmodels.SearchViewModel
+import com.quanlv.musicplayer.ui.viewmodels.SongDetailViewModel
+import com.quanlv.musicplayer.utils.BeatConstants.ALBUM_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.ARTIST_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.SONG_TYPE
 
 @Suppress("UNCHECKED_CAST")
 class SearchAdapter(

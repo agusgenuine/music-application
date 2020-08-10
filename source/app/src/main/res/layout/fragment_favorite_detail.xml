@@ -20,11 +20,11 @@
 
         <variable
             name="favorite"
-            type="com.crrl.beatplayer.models.Favorite" />
+            type="com.quanlv.musicplayer.models.Favorite" />
 
         <variable
             name="viewModel"
-            type="com.crrl.beatplayer.ui.viewmodels.FavoriteViewModel" />
+            type="com.quanlv.musicplayer.ui.viewmodels.FavoriteViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -14,9 +14,9 @@
 package com.quanlv.musicplayer.repository
 
 import android.content.Context
-import com.crrl.beatplayer.extensions.toIDList
-import com.crrl.beatplayer.models.Folder
-import com.crrl.beatplayer.models.Song
+import com.quanlv.musicplayer.extensions.toIDList
+import com.quanlv.musicplayer.models.Folder
+import com.quanlv.musicplayer.models.Song
 
 interface FoldersRepository {
     fun getFolders(): List<Folder>

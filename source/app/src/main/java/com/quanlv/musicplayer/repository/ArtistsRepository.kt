@@ -16,12 +16,12 @@ package com.quanlv.musicplayer.repository
 import android.content.Context
 import android.database.Cursor
 import android.provider.MediaStore
-import com.crrl.beatplayer.extensions.toList
-import com.crrl.beatplayer.models.Album
-import com.crrl.beatplayer.models.Artist
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.utils.SettingsUtility
-import com.crrl.beatplayer.utils.SortModes
+import com.quanlv.musicplayer.extensions.toList
+import com.quanlv.musicplayer.models.Album
+import com.quanlv.musicplayer.models.Artist
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.utils.SettingsUtility
+import com.quanlv.musicplayer.utils.SortModes
 
 interface ArtistsRepository {
     fun getArtist(id: Long): Artist

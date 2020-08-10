@@ -19,11 +19,11 @@
 
         <import type="android.view.View" />
 
-        <import type="com.crrl.beatplayer.utils.BeatConstants" />
+        <import type="com.quanlv.musicplayer.utils.BeatConstants" />
 
         <variable
             name="favorite"
-            type="com.crrl.beatplayer.models.Favorite" />
+            type="com.quanlv.musicplayer.models.Favorite" />
 
         <variable
             name="width"

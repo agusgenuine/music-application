@@ -1,4 +1,9 @@
 include ':alertdialog'
 include ':alertdialog'
+include ':alertdialog'
+include ':alertdialog'
+include ':alertdialog'
+include ':alertdialog'
+include ':alertdialog'
 include ':app'
 rootProject.name = "Music Player"

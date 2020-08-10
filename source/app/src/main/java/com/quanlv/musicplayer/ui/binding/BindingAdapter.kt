@@ -1,20 +1,8 @@
-/*
- * Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.quanlv.musicplayer.ui.binding
 
 import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
+import android.os.Build
 import android.support.v4.media.session.PlaybackStateCompat.*
 import android.text.Html
 import android.view.View
@@ -30,20 +18,20 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import com.crrl.beatplayer.R
-import com.crrl.beatplayer.alertdialog.MusicVisualizer
-import com.crrl.beatplayer.extensions.*
-import com.crrl.beatplayer.models.Album
-import com.crrl.beatplayer.models.Favorite
-import com.crrl.beatplayer.models.SearchData
-import com.crrl.beatplayer.models.Song
-import com.crrl.beatplayer.utils.BeatConstants.ALBUM_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.ARTIST_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.FAVORITE_TYPE
-import com.crrl.beatplayer.utils.BeatConstants.FOLDER_TYPE
-import com.crrl.beatplayer.utils.GeneralUtils.PORTRAIT
-import com.crrl.beatplayer.utils.GeneralUtils.getAlbumArtUri
-import com.crrl.beatplayer.utils.GeneralUtils.getOrientation
+import com.quanlv.musicplayer.R
+import com.quanlv.musicplayer.alertdialog.MusicVisualizer
+import com.quanlv.musicplayer.extensions.*
+import com.quanlv.musicplayer.models.Album
+import com.quanlv.musicplayer.models.Favorite
+import com.quanlv.musicplayer.models.SearchData
+import com.quanlv.musicplayer.models.Song
+import com.quanlv.musicplayer.utils.BeatConstants.ALBUM_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.ARTIST_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.FAVORITE_TYPE
+import com.quanlv.musicplayer.utils.BeatConstants.FOLDER_TYPE
+import com.quanlv.musicplayer.utils.GeneralUtils.PORTRAIT
+import com.quanlv.musicplayer.utils.GeneralUtils.getAlbumArtUri
+import com.quanlv.musicplayer.utils.GeneralUtils.getOrientation
 import com.github.florent37.kotlin.pleaseanimate.please
 import rm.com.audiowave.AudioWaveView
 import timber.log.Timber
@@ -99,7 +87,9 @@ fun setImageSize(view: View, width: Int, height: Int) {
 
 @BindingAdapter("app:html")
 fun setTextHtml(view: TextView, html: String) {
-    view.setText(Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY), TextView.BufferType.SPANNABLE)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        view.setText(Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY), TextView.BufferType.SPANNABLE)
+    }
 }
 
 @BindingAdapter("app:track_number")

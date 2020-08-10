@@ -14,7 +14,7 @@
 package com.quanlv.musicplayer.models
 
 import android.support.v4.media.session.PlaybackStateCompat
-import com.crrl.beatplayer.utils.BeatConstants
+import com.quanlv.musicplayer.utils.BeatConstants
 
 class PlaybackState(
     val position: Int = 0,

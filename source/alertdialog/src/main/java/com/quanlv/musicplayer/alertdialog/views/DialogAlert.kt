@@ -16,14 +16,14 @@ package com.quanlv.musicplayer.alertdialog.views
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import com.crrl.beatplayer.alertdialog.R
-import com.crrl.beatplayer.alertdialog.actions.AlertItemAction
-import com.crrl.beatplayer.alertdialog.enums.AlertItemTheme
-import com.crrl.beatplayer.alertdialog.extensions.addOnWindowFocusChangeListener
-import com.crrl.beatplayer.alertdialog.stylers.AlertItemStyle
-import com.crrl.beatplayer.alertdialog.stylers.base.ItemStyle
-import com.crrl.beatplayer.alertdialog.utils.ViewUtils.drawRoundRectShape
-import com.crrl.beatplayer.alertdialog.views.base.DialogFragmentBase
+import com.quanlv.musicplayer.alertdialog.R
+import com.quanlv.musicplayer.alertdialog.actions.AlertItemAction
+import com.quanlv.musicplayer.alertdialog.enums.AlertItemTheme
+import com.quanlv.musicplayer.alertdialog.extensions.addOnWindowFocusChangeListener
+import com.quanlv.musicplayer.alertdialog.stylers.AlertItemStyle
+import com.quanlv.musicplayer.alertdialog.stylers.base.ItemStyle
+import com.quanlv.musicplayer.alertdialog.utils.ViewUtils.drawRoundRectShape
+import com.quanlv.musicplayer.alertdialog.views.base.DialogFragmentBase
 import kotlinx.android.synthetic.main.parent_dialog_layout.view.*
 
 class DialogAlert : DialogFragmentBase() {
