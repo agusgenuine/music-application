@@ -1,8 +1,9 @@
-package com.quanlv.musicplayer.ui.widgets
+package com.quanlv.musicplayer.alertdialog
 
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
+import android.os.Build
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.View
@@ -27,7 +28,9 @@ class MusicVisualizer : View {
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
         val att = context.obtainStyledAttributes(attrs, R.styleable.MusicVisualizer)
-        paint.color = att.getColor(0, context.getColor(R.color.colorPrimary))
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            paint.color = att.getColor(0, context.getColor(R.color.colorPrimary))
+        }
         removeCallbacks(animateView)
         post(animateView)
         att.recycle()

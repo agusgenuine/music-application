@@ -233,7 +233,9 @@ fun setClipToOutline(view: View, clipToOutline: Boolean) {
 @BindingAdapter("app:textUnderline")
 fun textUnderline(view: TextView, textUnderline: Boolean) {
     if (textUnderline)
-        view.text = Html.fromHtml("<u>${view.text}</u>", Html.FROM_HTML_MODE_LEGACY)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            view.text = Html.fromHtml("<u>${view.text}</u>", Html.FROM_HTML_MODE_LEGACY)
+        }
 }
 
 @BindingAdapter("app:type")

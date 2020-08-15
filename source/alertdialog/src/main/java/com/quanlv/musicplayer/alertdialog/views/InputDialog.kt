@@ -14,6 +14,7 @@
 package com.quanlv.musicplayer.alertdialog.views
 
 import android.annotation.SuppressLint
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -176,7 +177,9 @@ class InputDialog : DialogFragmentBase() {
                 action.setTextColor(style.hintTextColor)
             }
             AlertItemTheme.CANCEL -> {
-                action.setTextColor(context!!.getColor(R.color.red))
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    action.setTextColor(context!!.getColor(R.color.red))
+                }
             }
             AlertItemTheme.ACCEPT -> {
                 action.setTextColor(style.acceptColor)
