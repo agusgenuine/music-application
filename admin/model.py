@@ -1,4 +1,7 @@
 class Song():
+    '''
+    Mapping Song Object
+    '''
     def __init__(self, sid=0, name=None, artist=None, album=None, date_created=None, views=0, lyric=None, data=None):
         self.sid = sid
         self.name = name
@@ -22,6 +25,9 @@ class Song():
         print('-------------')
 
 class Artist():
+    '''
+    Mapping Artist Object
+    '''
     def __init__(self, aid=0, name=None, cover=None, profile=None):
         self.aid = aid
         self.name = name
@@ -37,6 +43,9 @@ class Artist():
         print('-------------')
 
 class Collection():
+    '''
+    Mapping Collection Object
+    '''
     def __init__(self, cid=0, name=None, listSong=[]):
         self.cid = cid
         self.name = name

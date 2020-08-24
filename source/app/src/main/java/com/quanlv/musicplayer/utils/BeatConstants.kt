@@ -59,6 +59,7 @@ object BeatConstants {
     const val ARTIST_TYPE = "Artist"
     const val FOLDER_TYPE = "Folder"
     const val PLAY_LIST_TYPE = "Playlist"
+    const val ONLINE_TYPE = "Online"
 
     const val READ_ONLY_MODE = "r"
 

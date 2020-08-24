@@ -81,13 +81,14 @@ class SongDAO():
             return False
 
 
-    def deleteSong(self, song_id, name_file):
+    def deleteSong(self, song_id):
         '''
         delete song on database and storage
         song_id use to delete on database
         name_file (song title + .mp3) use to delete file on firestorage
         '''
         try:
+            name_file = SongDAO().getSongDetails(song_id).name + '.mp3'
             self.database.child('music-player/songs').child(song_id).remove()
             self.storage.child('songs').delete(name_file)
             return True
@@ -108,7 +109,7 @@ class SongDAO():
             return None
 
 
-    def readData(self):
+    def getList(self):
         '''
         function return list id of songs
         '''
@@ -116,7 +117,7 @@ class SongDAO():
             songs = self.database.child('music-player/songs').get()
             return list(songs.val())
         except:
-            return None
+            return list([])
 
 
 class ArtistDAO():
@@ -138,10 +139,27 @@ class ArtistDAO():
         self.storage.child(url).put(local_path)
         return self.storage.child(url).get_url(None)
 
-    def addArtist(self, artist):
+
+    def detect(self, path):
+        '''
+        FILE EXAMPLE:
+            Name of artist
+            C:\Image\Artist.png     <-- Second line: Image cover local path
+            Multiline after         <-- Profile of Artist (Same as: Name, age, address, ...)
+        '''
+        artist = model.Artist()
+        artist.aid = utils.generateID()
+        with open(path) as data:
+            artist.name = data.readline()
+            artist.cover = data.readline()
+            artist.profile = data.readlines()
+        return artist
+
+    def addArtist(self, path):
         '''
         upload artist data to firebase database
         '''
+        artist = self.detect(path)
         try:
             if artist.cover != None or artist != "":
                 resp_url = self.uploadFile(artist.cover, 'artists', artist.name+'.png')
@@ -170,13 +188,14 @@ class ArtistDAO():
         except:
             return False
 
-    def deleteArtist(self, artist_id, name_file):
+    def deleteArtist(self, artist_id):
         '''
         delete artist on database and storage
         artist_id use to delete on database
         name_file (artist name + .png) use to delete file on firestorage
         '''
         try:
+            name_file = ArtistDAO().getArtistDetails(artist_id).name + '.png'
             self.database.child('music-player/artists').child(artist_id).remove()
             self.storage.child('artists').delete(name_file)
             return True
@@ -195,7 +214,7 @@ class ArtistDAO():
         except:
             return None
 
-    def readData(self):
+    def getList(self):
         '''
         function return list id of songs
         '''
@@ -203,7 +222,7 @@ class ArtistDAO():
             artists = self.database.child('music-player/artists').get()
             return list(artists.val())
         except:
-            return None
+            return list([])
 
 
 class CollectionDAO():
@@ -216,10 +235,26 @@ class CollectionDAO():
         self.storage = DTO.getFireStorage()
         self.database = DTO.getDatabase()
 
-    def addCollection(self, collection):
+
+    def detect(self, path):
+        '''
+        FILE EXAMPLE:
+            Name of collection
+            SongId1 SongId2 SongId3 
+        '''
+        collec = model.Collection()
+        collec.cid = utils.generateID()
+        with open(path) as data:
+            collec.name = data.readline()
+            collec.listSong = list(map(int, data.readline().rstrip().split()))
+        return collec
+            
+
+    def addCollection(self, path):
         '''
         upload collection data to firebase database
         '''
+        collection = self.detect(path)
         try:
             #insert to database
             data =  {
@@ -267,7 +302,7 @@ class CollectionDAO():
         except: 
             return None
 
-    def readData(self):
+    def getList(self):
         '''
         function return list id of collection
         '''
@@ -275,4 +310,4 @@ class CollectionDAO():
             collec = self.database.child('music-player/collections').get()
             return list(collec.val())
         except:
-            return None
+            return list([])

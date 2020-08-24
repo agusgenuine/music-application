@@ -31,7 +31,7 @@ open class DBHelper(context: Context?, factory: SQLiteDatabase.CursorFactory? = 
 
     companion object {
         const val DATABASE_VERSION = 1
-        const val DATABASE_NAME = "com.crrl.beatplayer.db"
+        const val DATABASE_NAME = "com.quanlv.listentome.db"
     }
 
     protected open fun insertRow(

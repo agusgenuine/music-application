@@ -49,6 +49,7 @@ class LibraryFragment : BaseSongDetailFragment() {
 
     private fun initViewPager(viewPager: ViewPager) {
         val listSortModeAdapter = ViewPagerAdapter(safeActivity.supportFragmentManager).apply {
+            addFragment(OnlineFragment(), getString(R.string.online))
             addFragment(FavoriteFragment(), getString(R.string.favorites))
             addFragment(PlaylistFragment(), getString(R.string.playlists))
             addFragment(SongFragment(), getString(R.string.songs))

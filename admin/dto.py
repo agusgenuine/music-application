@@ -1,6 +1,9 @@
 import pyrebase
 
 class Connecting():
+    '''
+    Class Connect To Firebase
+    '''
 
     def __init__(self):
         config = {
